@@ -1,0 +1,25 @@
+[project]
+name = "pdm-lock-build-deps"
+version = "0.1.0"
+description = "Example project that reads build dependencies from lockfile."
+authors = [
+    {name = "Frost Ming", email = "mianghong@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[tool.pdm.dev-dependencies]
+build = [
+    "flask>=2.2.2",
+]
+
+[tool.pdm.build]
+includes = ["build_api.py", "pdm.lock"]
+
+[build-system]
+requires = ["pdm>=2"]
+build-backend = "build_api"
+backend-path = ["."]
