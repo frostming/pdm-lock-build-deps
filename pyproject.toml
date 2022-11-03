@@ -17,7 +17,8 @@ build = [
 ]
 
 [tool.pdm.build]
-includes = ["build_api.py", "pdm.lock"]
+includes = ["build_api.py"]
+source-includes = ["pdm.lock"]
 
 [build-system]
 requires = ["pdm>=2"]
