@@ -1,2 +1,4 @@
 __pycache__/
 .pdm.toml
+dist/
+build/
